@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+    <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+    <py-env>
+      - numpy
+      - matplotlib
+    </py-env>
+  </head>
+  <body> 
+    <h1 id="title"></h1>
+    <div id="grafs" style="display: flex;flex-direction: column;align-items: center;width: fit-content;">
+      <div id="grafico"></div>
+      <div id="grafico2"></div>  
+    </div>
+
+    <py-script src="/main.py" output="title"> </py-script>
+    <py-script src="/mandelbrot.py" output="grafico"> </py-script>
+    <py-script src="/juliaset.py" output="grafico2"> </py-script>
+  </body>
+</html>
